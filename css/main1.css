@@ -1,0 +1,96 @@
+*  {
+	box-sizing: border-box;
+	}
+:root {
+	/*--dark: #070707;*/
+	--dark:#8B0000;
+	--sizeindex: calc(1vw + 1vh);
+	--transition: .75s cubic-bezier(.2, .6, 0, 1);
+}
+@font-face {
+	font-family: raleway_m;
+	src: url(../fonts/raleway-v22-cyrillic-400.woff2);
+	font-weight: 400;
+	
+}
+@font-face {
+	font-family: raleway_m;
+	src: url(../fonts/raleway-v22-cyrillic-900.woff2);
+	font-weight: 900;
+}
+body { 
+	background-color: var(--dark);
+	color: #2E2E2E;
+	font-family: raleway_m, sans-serif;
+	/*overflow: hidden; */
+	line-height: 1.2;
+	margin: 5%;
+	}
+.table {
+	width: 100%;
+	height: auto;
+	border: #2E2E2E;
+	background-color: #EDE1B1;
+	margin-bottom: 60px;
+	border-radius: 18px;
+}
+.table2 {
+	width: 100%;
+	height: auto;
+	border: #2E2E2E;
+	background-color: #FAFAD2;
+	margin-bottom: 60px;
+	border-radius: 18px;
+}
+.box {
+	width: 80%; /* ширина бокса */
+	position: relative;/* размещаем относительно бокса */
+	overflow: hidden; /* все что выходит за границы - скрываем */
+	border: 0 ;
+	margin-top: 40px ;
+	margin-right:  20px;
+	margin-bottom:  10px ;
+	margin-left:  20px ;
+	}
+ 	 
+#pushik {		
+	width: 100%;
+	border-radius: 18px		
+}
+#pushik {
+	object-fit: cover; /* адаптариуем картинку под бокс */
+	transition: 0.2s; /* для плавности анимации */
+}
+	   
+  .box:hover #pushik {
+	transform: scale(1.15); /* увеличиваем картинку при наведении */
+  }
+ 
+.btn {
+		background: #8B0000 ;
+		padding: 15px 20px;
+		color: #fff;
+		border: none;
+		font-family: inherit;
+		cursor: pointer;
+		border-radius: 18px;
+		box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8); 
+		margin-top: 10px;
+		margin-bottom: 40px;
+		font-family: inherit;
+		width: 70%;
+		position: relative;
+	  }
+  .btn:hover {
+	opacity: 0.8 ;
+	 }
+	 .boxx {
+		width: 80%; /* ширина бокса */
+		position: relative;/* размещаем относительно бокса */
+		overflow: hidden; /* все что выходит за границы - скрываем */
+		border: 0 ;
+		margin-right:  20px;
+		margin-bottom:  10px ;
+		margin-left:  20px ;
+		}
+		 
